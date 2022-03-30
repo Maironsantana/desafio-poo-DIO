@@ -11,7 +11,10 @@ public class Mentoria extends Conteudo{
         return XP_PADRAO + 20d;
     }
 
-    public Mentoria() {
+    public Mentoria(String titulo, String descricao, LocalDate data) {
+        this.setTitulo(titulo);
+        this.setDescricao(descricao);
+        this.data = data;
     }
 
     public LocalDate getData() {
@@ -24,10 +27,8 @@ public class Mentoria extends Conteudo{
 
     @Override
     public String toString() {
-        return "Mentoria{" +
-                "titulo='" + getTitulo() + '\'' +
-                ", descricao='" + getDescricao() + '\'' +
-                ", data=" + data +
-                '}';
+        return  getTitulo() + '\n' +
+                getDescricao() + '\n' +
+                "Data da Live: " + data;
     }
 }
