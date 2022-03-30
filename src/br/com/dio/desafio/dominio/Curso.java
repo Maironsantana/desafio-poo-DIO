@@ -2,7 +2,7 @@ package br.com.dio.desafio.dominio;
 
 public class Curso extends Conteudo {
 
-    private int cargahoraria;
+    private int cargahoraria = 8;
 
     @Override
     public double calcularXp() {
